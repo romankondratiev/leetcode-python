@@ -10,7 +10,7 @@ class Solution:
             for n in nums: #for each number 
                 #print(n)
                 #print(possible_sums)
-                possible_sums.update({(v + n) for v in possible_sums}) 
+                possible_sums.update({(v + n) for v in possible_sums}) #adds sums and itself becaue sum with 0 is always itself 
                 # it updates dictionary 
                 # with n element and all possible sums of n and elements in the dictionary
                 # and stores only unique elements
